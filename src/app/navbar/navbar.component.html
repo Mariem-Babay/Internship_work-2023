@@ -1,0 +1,37 @@
+
+      <nav class="app-navbar">
+      <div class="logo">
+        <img src="assets/logo-dark.png" alt="tunav_shop" />
+      </div>
+        <ul>
+          <li><a routerLink="#">Accueil</a></li>
+          <li><a routerLink="/apropos">À propos</a></li>
+          <li><a routerLink="/boutique">Boutique</a></li>
+          <li><a routerLink="/contact">Contact</a></li>
+          <ul id="menu-login">
+            <li class="login-icon" [matMenuTriggerFor]="menu"><a >  <mat-icon aria-hidden="false" aria-label="Example account_circle icon" fontIcon="account_circle"></mat-icon>   Connexion</a></li>
+            <mat-menu #menu="matMenu">
+              <button mat-menu-item (click)="loginAs('client')"  routerLink="/login">Client</button>
+              <button mat-menu-item (click)="loginAs('admin')"  routerLink="/login">Admin</button>
+            </mat-menu>
+          </ul>
+        </ul>
+
+      </nav>
+  
+ 
+
+
+<!-- <li id="menu-login" [matMenuTriggerFor]="menu">
+      <a routerLink="/login">
+        <mat-icon aria-hidden="false" aria-label="Example account_circle icon" fontIcon="account_circle"></mat-icon>
+        Connexion
+      </a>
+    </li>
+  </ul>
+</nav>
+
+<mat-menu #menu="matMenu">
+  <button mat-menu-item (click)="loginAs('client')">Client</button>
+  <button mat-menu-item (click)="loginAs('admin')">Admin</button>
+</mat-menu>-->

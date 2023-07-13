@@ -1,0 +1,45 @@
+.section1 {
+  background-color: #6EC1E4;
+  color: white;
+  padding: 50px;
+}
+
+.photo {
+  margin-top: 10px;
+  width: 250%;
+  height: auto;
+  
+}
+
+.col-md-6 h2 {
+  font-size: 20px;
+  margin-top: 35px;
+}
+
+
+.header-container{
+  display: flex;
+  justify-content: space-around;
+}
+
+.col-md-6{
+  margin-top: 150px;
+  text-align: center;
+}
+
+.button-container {
+  text-align: center;
+  margin-top: 10px; /* Ajustez la marge supérieure en fonction de vos besoins */
+}
+
+.button-container button {
+  font-size: 24px;
+  width: 78px;
+  height: 78px;
+  margin-top: 112px;
+  margin-left: 320px;
+}
+
+.custom-icon-button mat-icon {
+  font-size: 25xpx; 
+}
