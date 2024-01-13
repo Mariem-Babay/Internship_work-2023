@@ -5,11 +5,20 @@
         <img src="assets/gps-removebg-preview.png" alt="Photo" class="photo">
       </div>
       <div class="col-md-6">
+        <div class="input-group ps-5">
+          <div id="navbar-search-autocomplete" class="form-outline">
+            <input type="search" id="form1" class="form-control" />
+            <label class="form-label" for="form1">Search</label>
+          </div>
+          <button type="button" class="btn btn-primary">
+            <i class="fas fa-search"></i>
+          </button>
+        </div>
         <h2>Trouvez le GPS idéal, simple & pratique qui vous convient ! Laissez-nous vous aider à tracer votre chemin et à atteindre votre destination avec précision. Bienvenue chez Tunav Shop, votre partenaire de confiance en matière de navigation GPS.</h2>
         <div class="button-container">
-          <button mat-fab class="custom-icon-button">
+          <a mat-fab class="custom-icon-button" routerLink="/contact">Commandez Maintenant !
             <mat-icon>shopping_cart</mat-icon>
-          </button>
+          </a>
         </div>
       </div>
     </div>

@@ -2,19 +2,17 @@
     <div class="form">
     <a class="cross-link" href="\">x</a>
       <form class="register-form" method="POST">
-        <h2>Register</h2>
-        <input type="text" placeholder="Full Name *" required/>
-        <input type="text" placeholder="Username *" required/>
-        <input type="email" placeholder="Email *" required/>
-        <input type="password" placeholder="Password *" required/>
-        <a class="btn" href="#">
+        <h2>S'inscrire</h2>
+        <input type="email" placeholder="Email *" [(ngModel)]="email" name ="email" required/>
+        <input type="password" placeholder="Password *"  [(ngModel)]="password" name ="password" required/>
+        <a class="btn" href="#" (click)="register()">
           <span></span>
           <span></span>
           <span></span>
           <span></span>
-          Create
+          Créer
         </a>
-        <p class="message">Already registered? <a routerLink="/login">Sign In</a></p>
+        <p class="message">Déja inscrit? <a routerLink="/login">Se connecter</a></p>
       </form>
     </div>
   </div>

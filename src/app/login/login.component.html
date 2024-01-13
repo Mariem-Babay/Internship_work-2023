@@ -2,17 +2,18 @@
   <div class="form">
     <a class="cross-link" href="\">x</a>
     <form class="login-form" method="post">
-      <h2> Login</h2>
-      <input type="text" placeholder="Username" required />
-      <input type="password" placeholder="Password" required />
-      <a class="btn" href="#">
+      <h2>Se connecter</h2>
+      <input type="email" placeholder="Email" [(ngModel)]="email" name ="email" required />
+      <input type="password" placeholder="Password" [(ngModel)]="password" name ="password" required />
+      <a class="btn" href="#" (click)="login()">
         <span></span>
         <span></span>
         <span></span>
         <span></span>
-        Sign in
+       Se connecter
       </a>
-      <p class="message">Not registered? <a routerLink="/register">Create an account</a></p>
+      <p class="message"> <a routerLink="/">Mot de passe oublié?</a></p>
+      <p class="message">Vous n'avez pas un compte? <a routerLink="/register">Créer un nouveau</a></p>
     </form>
   </div>
 </div>
